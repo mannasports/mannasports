@@ -3,47 +3,49 @@
     padding: 0;
 }
 /* navbar top */
-.navbar-top {
+.navbar-top{
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     background-color: #032f3c;
     color: whitesmoke;
-    padding: 0 10px; /* Reduce extra margin */
+    
+    
 }
-
-.social-link img, .icons img {
+.social-link i img{
     margin-left: 10px;
-    transition: transform 0.3s ease-in-out; /* Smoother transition */
+    transition: 0.5s ease;
     cursor: pointer;
-    width: 30px; /* Adjust as needed */
 }
-
-.social-link img:hover, .icons img:hover {
-    transform: scale(1.1);
-    background-color: rgba(238, 224, 208, 0.8);
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
     border-radius: 50px;
 }
-
-/* Responsive */
-@media screen and (max-width: 420px) {
-    .social-link img, .icons img {
+@media screen and (max-width:420px){
+    .social-link i img{
         width: 20px;
     }
 }
-
-.logo h3 {
+.logo h3{
     font-weight: bold;
 }
-
-@media screen and (max-width: 420px) {
-    .logo h2 {
-        font-size: 24px;
+@media screen and (max-width:420px){
+    .logo h2{
+        font-size: 20px;
     }
 }
-
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
 /* navbar top */
 
 /* main content */
@@ -59,12 +61,12 @@
 #manna {
     padding:15px;
     background-color: white;
-    color: rgb(17, 12, 4);
+    color: rgb(29, 25, 19);
     box-shadow: rgba(0, 0, 0, 0.25) 20px 14px 28px, 
                 rgba(0, 0, 0, 0.22) 20px 10px 10px;
   
     /* Animate width separately */
-    animation: fade-in 1s ease-in, width-grow 0.5s ease-in;
+    animation: fade-in 1s ease-in, width-grow .5s ease-in;
   }
   
   @keyframes fade-in {
